@@ -7,7 +7,7 @@ import (
 	pb "github.com/singh-jatin28/calculator-grpc/proto"
 )
 
-func doAvg(c pb.CalculatorServiceClient) {
+func calculateAvg(c pb.CalculatorServiceClient) {
 	log.Println("Doing average")
 	stream, err := c.Avg(context.Background())
 
